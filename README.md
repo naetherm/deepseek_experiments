@@ -48,3 +48,17 @@ So, e.g. to start the document-qa example you can now call:
 poetry run streamlit run deepseek-experiment/app_document_rag.py
 ```
 for starting the corresponding app. 
+
+## Examples
+
+### Document (PDF) QA System
+
+```bash
+poetry run streamlit run deepseek-experiment/app_document_rag.py
+```
+
+### Simple Chatbot
+
+```bash
+poetry run streamlit run deepseek_experiments/app_chat.py
+```
