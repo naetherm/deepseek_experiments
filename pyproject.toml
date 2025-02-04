@@ -1,0 +1,33 @@
+[project]
+name = "deepseek_experiments"
+version = "0.1.0"
+description = "Some experiments around Deepseek"
+authors = [
+    {name = "naetherm", email = "naether.markus@gmail.com"},
+]
+dependencies = [
+    "streamlit>=1.41.1",
+    "langchain>=0.3.17",
+    "langchain-community>=0.3.16",
+    "langchain-experimental>=0.3.4",
+    "pdfplumber>=0.11.5",
+    "sentence-transformers>=3.4.1",
+    "faiss-cpu>=1.10.0",
+]
+requires-python = "==3.13.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.poetry]
+name = "deepseek_experiments"
+version = "0.1.0"
+description = "Some experiments around Deepseek"
+authors = [
+    "naetherm <naether.markus@gmail.com>",
+]
+readme = "README.md"
+license = "MIT"
+
+[tool.pdm]
+distribution = false
