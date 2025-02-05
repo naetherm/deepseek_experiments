@@ -1,40 +1,50 @@
-# Deepseek Experiments
+# Deepseek Model Experiments
 
-Before continuing, we first have to install deepseek through `ollama`.
-For a detailed instruction on how to install `ollama`, please go to the corresponding webpage: https://ollama.com
+This guide explains how to set up and run experiments with the Deepseek language model using Ollama.
 
-And start `ollama`:
+**Note**: As this is a personal playground it, and the direction it takes, can shift any time.
+
+## Prerequisites
+
+### Installing Ollama
+1. First, install Ollama by following the official installation guide at [ollama.com](https://ollama.com)
+2. Start the Ollama service:
 ```bash
 ollama serve
 ```
 
-Next, we need to install and run ollama using the deepseek-r1 (7B) model:
+### Setting up Deepseek
+Install the Deepseek model through Ollama. The default version uses the 7B parameter model:
 ```bash
 ollama pull deepseek-r1
 ```
 
-If you want to check out a different model, you have to specify the number of parameters as an additional element of the model name, e.g. trying the 1.5B parameter variant:
+For different model sizes, specify the parameter count in the model name. For example, to use the 1.5B parameter variant:
 ```bash
 ollama pull deepseek-r1:1.5b
 ```
 
-To check if everything works as expected, you can try the model in the terminal:
+To verify your installation, test the model in the terminal:
 ```bash
 ollama run deepseek-r1:1.5b
 ```
 
-## Virtual Environment
+## Environment Setup
 
-Typically, we use `poetry` and `pdm`, so here we can use pdm as well to create a virtual environment for us like:
+### Creating a Virtual Environment
+This project uses PDM for dependency management. Follow these steps to set up your environment:
+
 ```bash
+# Create a new virtual environment
 pdm venv create
-pdm use # If not already set correctly, choose the one in the current pwd
+
+# Select and activate the virtual environment
+pdm use
 pdm venv activate
 ```
 
-## More requirements
-
-Install all remaining extra packages:
+### Installing Dependencies
+Install all required packages:
 ```bash
 pdm install
 pdm sync
