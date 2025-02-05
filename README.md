@@ -62,3 +62,9 @@ poetry run streamlit run deepseek-experiment/app_document_rag.py
 ```bash
 poetry run streamlit run deepseek_experiments/app_chat.py
 ```
+
+### Chatbot with System Prompt for Python Development
+
+```bash
+poetry run streamlit run deepseek_experiments/app_python_coder.py
+```
